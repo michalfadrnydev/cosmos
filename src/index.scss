@@ -1,0 +1,8 @@
+@import "./styles/main.scss";
+
+body {
+  margin: 0;
+  background: $backg-col;
+  background-size: cover;
+  background-image: url(./assets/star_backg.png);
+}

@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/UI/Header";
 
 function App() {
   return (
     <>
-     <h1>Ahoj!</h1>
+     <Header/>
     </>
   );
 }

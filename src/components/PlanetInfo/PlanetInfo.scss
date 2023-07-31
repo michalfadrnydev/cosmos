@@ -1,0 +1,50 @@
+@import "../../styles/main.scss";
+
+.planet-info {
+    color: white;
+    img{
+        height: 111px;
+    } 
+    h2 {
+        font-family: $ff-header;
+        font-size: $fs-h-main-s;
+        font-weight: 400;
+    }
+    p, span {
+        font-family: $ff-body;
+        font-size: $fs-t-s;
+        font-weight: 300;
+        color: rgba(255, 255, 255,  0.7);
+    }
+    span{
+        font-size: 12px;
+        a {
+            color: $primary-col;
+            font-weight: 500;
+            color: rgba(255, 255, 255,  0.7);
+        }
+        img {
+            height: 10px;
+            opacity: 0.7;
+        }
+    }
+    @media (min-width: $md) {
+        h2 {
+            font-size: $fs-h-main-m;
+        }
+        p {
+            font-size: $fs-t-m;
+        }
+    }
+    @media (min-width: $lg) {
+        h2 {
+            font-size: $fs-h-main-l;
+        }
+        p {
+            font-size: $fs-t-l;
+        }
+        span{
+            font-size: 14px;
+        }
+    }
+}

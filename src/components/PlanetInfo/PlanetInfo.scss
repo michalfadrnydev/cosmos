@@ -2,6 +2,14 @@
 
 .planet-info {
     color: white;
+    text-align: center;
+    padding: 0 24px;
+    &__image {
+        height: 315px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     img{
         height: 111px;
     } 
@@ -9,15 +17,20 @@
         font-family: $ff-header;
         font-size: $fs-h-main-s;
         font-weight: 400;
+        margin: 0 0 24px 0;
     }
     p, span {
         font-family: $ff-body;
         font-size: $fs-t-s;
         font-weight: 300;
         color: rgba(255, 255, 255,  0.7);
+        margin: 0;
+
     }
     span{
         font-size: 12px;
+        padding: 36px 0;
+        display: block;
         a {
             color: $primary-col;
             font-weight: 500;

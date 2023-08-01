@@ -1,0 +1,15 @@
+@import "../../styles/main.scss";
+
+.data-card {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+        font-family: $ff-body;
+    }
+    &__number {
+        font-family: $ff-header;
+    }
+}

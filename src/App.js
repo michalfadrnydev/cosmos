@@ -6,7 +6,9 @@ function App() {
   return (
     <>
      <Header/>
-     <PlanetInfo/>
+     <body>
+      <PlanetInfo/>
+     </body>
     </>
   );
 }

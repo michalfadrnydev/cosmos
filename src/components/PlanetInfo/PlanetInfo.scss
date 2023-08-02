@@ -13,13 +13,14 @@
     justify-content: space-between;
     letter-spacing: $f-spac-m;
     li {
-        padding: 20px 0;
+        padding: 20px 0 16px 0;
         border-bottom: 4px solid transparent;
     }
     @media (min-width: $md) {
         display: none;
     }
 }
+
 .planet {
     color: white;
     text-align: center;
@@ -32,7 +33,7 @@
         align-items: center;
         justify-content: center;
         img{
-            height: 111px;
+            height: 111px; //smazat
         } 
     }
 
@@ -44,23 +45,27 @@
                 font-weight: 400;
                 margin: 0 0 24px 0;
             }
-            p, span {
+            p {
                 font-family: $ff-body;
                 font-size: $fs-t-s;
                 font-weight: 300;
-                color: rgba(255, 255, 255,  0.5);
                 margin: 0;
-        
+                line-height: 22px;
+                
             }
             span{
+                font-family: $ff-body;
+                color: rgba(255, 255, 255,  0.5);
                 font-size: 12px;
                 padding: 36px 0;
                 display: block;
                 a {
-                    color: $primary-col;
-                    font-weight: 500;
                     color: rgba(255, 255, 255,  0.5);
+                    font-weight: 500;
                     margin-left: 4px;
+                    &:hover {
+                        color: $primary-col;
+                    }
                 }
                 img {
                     height: 10px;
@@ -69,29 +74,117 @@
                 }
             }
         }
-    }
-    .planet-data {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    @media (min-width: $md) {
-        h2 {
-            font-size: $fs-h-main-m;
+        &__menu {
+            display: none;
         }
-        p {
-            font-size: $fs-t-m;
+    }
+
+    @media (min-width: $md) {
+        .planet-image-container {
+            height: 468px;
+            img{
+                height: 184px; //smazat
+            } 
+        }
+        .planet-info {
+            display: flex;
+            flex-direction: row;
+            gap: 38px;
+            padding-bottom: 34px;
+
+            &__text {
+                text-align: start;
+                h2 {
+                    font-size: $fs-h-main-m;
+                    margin: 0 0 32px 0;
+                }
+                p { 
+                    line-height: 22px;        
+                }
+                span{
+                    padding: 16px 0 0 0;
+                    display: block;
+                    a {
+                        font-weight: 500;
+                        margin-left: 4px;
+                    }
+                    img {
+                        height: 10px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+
+            &__menu {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin-top: 62px;
+            }
         }
     }
     @media (min-width: $lg) {
-        h2 {
-            font-size: $fs-h-main-l;
+        padding: 0 164px 0 164px;
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        
+        .planet-image-container {
+            width: 50%;
+            height: 754px;
+            img{
+                height: 290px; //smazat
+            } 
         }
-        p {
-            font-size: $fs-t-l;
+        .planet-info {
+            flex-direction: column;
+            padding: 150px 0 0 0;
+            gap: 0;
+            width: 50%;
+            &__text {
+                text-align: start;
+                h2 {
+                    font-size: $fs-h-main-l;
+                    margin: 0 0 38px 0;
+                }
+                p { 
+                    font-size: 14px;
+                    line-height: 22px;        
+                }
+                span{
+                    padding: 32px 0 0 0;
+                    display: block;
+                    a {
+                        font-weight: 500;
+                        margin-left: 4px;
+                    }
+                    img {
+                        height: 10px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+            &__menu {
+                margin-top: 44px;
+            }
         }
-        span{
-            font-size: 14px;
-        }
+
     }
+}
+
+.planet-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 24px;
+    @media (min-width: $md) {
+        flex-direction: row;
+        gap: 12px;
+    }
+    @media (min-width: $lg) {
+        padding: 0 164px;
+        gap: 30px;
+    }
+
 }

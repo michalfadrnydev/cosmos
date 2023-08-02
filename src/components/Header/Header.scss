@@ -8,14 +8,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 24px;
-    &__list {
-        padding: 0px;
-        margin: 0px;
-        display: none;
-        list-style: none;
-        font-family: $ff-body;
-        font-weight: 500;
-    }
     h1 {
         font-size: 1.75rem;
         font-weight: 400;
@@ -32,16 +24,6 @@
             flex: 1;
             padding: 40px 0;
         }
-        &__list {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            font-size: $fs-t-m;
-            li {
-                height: 50px;
-                border-bottom: 4px solid transparent;
-            }
-        }
         &__menu {
             display: none;
         } 
@@ -53,17 +35,6 @@
         h1 {
             padding: 0;
             white-space: nowrap;
-        }
-        &__list {
-            justify-content: flex-end;
-            gap: 35px;
-            li {
-                display: flex;
-                align-items: center;
-                height: 85px;
-                border-top: 4px solid transparent;
-                border-bottom: none;
-            }
         }
     }
 }

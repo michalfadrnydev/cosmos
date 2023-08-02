@@ -8,9 +8,9 @@ const PlanetsContext = React.createContext([
             intstr: "Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.",
             surfgeol: "Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.",
             source: "https://en.wikipedia.org/wiki/Venus",
-            rottime: "56 DAYS",
+            rottime: "58.6 DAYS",
             revtime: "87.97 DAYS",
-            radius: "2,439 KM",
+            radius: "2,439.7 KM",
             avtemp: "430 °C"
         }, 
         {

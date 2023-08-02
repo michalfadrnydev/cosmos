@@ -6,4 +6,10 @@ body {
   background-size: cover;
   background-image: url(./assets/star_backg.png);
   padding-bottom: 48px;
+  @media (min-width: $md) {
+    padding-bottom: 36px;
+  }
+  @media (min-width: $lg) {
+    padding-bottom: 58px;
+  }
 }

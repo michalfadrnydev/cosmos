@@ -1,0 +1,31 @@
+@import "../../styles/main.scss";
+
+.menu-planets {
+    padding: 0px;
+    margin: 0px;
+    display: none;
+    list-style: none;
+    font-family: $ff-body;
+    font-weight: 500;
+    @media (min-width: $md) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: $fs-t-m;
+        li {
+            height: 46px;
+            border-bottom: 4px solid transparent;
+        }
+    }
+    @media (min-width: $lg) {
+        justify-content: flex-end;
+        gap: 35px;
+        li {
+            display: flex;
+            align-items: center;
+            height: 85px;
+            border-top: 4px solid transparent;
+            border-bottom: none;
+        }
+    }
+}

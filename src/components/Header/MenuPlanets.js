@@ -1,6 +1,6 @@
 import React, {useState, useContext} from "react";
 import PlanetsContext from "../../data/planets-context"
-import "./Header.scss";
+import "./MenuPlanets.scss";
 
 const MenuPlanets = () => {
     const ctx = useContext(PlanetsContext);
@@ -15,7 +15,7 @@ const MenuPlanets = () => {
     }
 
     return (
-        <ul className="main-header__list">
+        <ul className="menu-planets">
             {ctx.map(planet => 
                 <li 
                     key={planet.name}

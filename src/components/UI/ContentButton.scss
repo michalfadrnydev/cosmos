@@ -1,0 +1,28 @@
+@import "../../styles/main.scss";
+
+.content-button {
+    border: 1px solid rgba(255, 255, 255,  0.5);
+    background-color: $backg-col;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 14px 20px;
+    font-family: $ff-body;
+    font-weight: 500;
+    font-size: 9px;
+    letter-spacing: $f-spac-s;
+    //width: 280px;
+    &__number {
+        color: rgba(255, 255, 255,  0.5);
+    }
+    &__title {
+        color: $primary-col;
+        text-align: start;
+    }
+    @media (min-width: $lg) {
+        gap: 24px;
+        padding: 18px 28px;
+        font-size: 12px;
+        letter-spacing: $f-spac-m;
+    }
+}

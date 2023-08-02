@@ -4,6 +4,7 @@ import PlanetsContext from "../../data/planets-context";
 import myImage from "../../assets/planet-pict/full/1.png";
 import sourceIcon from "../../assets/icons/external-link.png";
 import DataCard from "./DataCard";
+import ContentButton from "../UI/MenuButton";
 
 import "./PlanetInfo.scss";
 
@@ -29,12 +30,17 @@ const PlanetInfo = () => {
                             <img src={sourceIcon}/>
                         </span>
                     </div>
-                    <div className="planet-info__data">
-                        <DataCard title="ROTATION TIME" number={ctx[0].rottime}/>
-                        <DataCard title="REVOLUTION TIME" number={ctx[0].revtime}/>
-                        <DataCard title="RADIUS" number={ctx[0].radius}/>
-                        <DataCard title="AVARAGE TEMP." number={ctx[0].avtemp}/>
+                    <div className="planet-info__menu">
+                        <ContentButton number="01" title="OVERVIEW"/>
+                        <ContentButton number="02" title="INTERNAL STRUCTURE"/>
+                        <ContentButton number="03" title="SURFACE GEOLOGY"/>
                     </div>
+                </div>
+                <div className="planet-data">
+                    <DataCard title="ROTATION TIME" number={ctx[0].rottime}/>
+                    <DataCard title="REVOLUTION TIME" number={ctx[0].revtime}/>
+                    <DataCard title="RADIUS" number={ctx[0].radius}/>
+                    <DataCard title="AVARAGE TEMP." number={ctx[0].avtemp}/>
                 </div>
             </div>
         </>

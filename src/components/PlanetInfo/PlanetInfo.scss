@@ -70,6 +70,11 @@
             }
         }
     }
+    .planet-data {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     @media (min-width: $md) {
         h2 {
             font-size: $fs-h-main-m;

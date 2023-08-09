@@ -1,18 +1,19 @@
-import React, {Fragment, useState, useEffect} from "react";
+import React, {useState} from "react";
 
-import MenuMobileIcon from "./MenuMobileIcon"
-import MenuPlanets from "./MenuPlanets";
+import MobileMenuIcon from "./MobileMenuIcon"
+import MainMenuPlanets from "./MainMenuPlanets";
 
-import "./Header.scss"
+import "./Header.scss";
 
-const Header = () => {
-
+const Header = (props) => {
     return (
-        <header className="main-header">
-            <h1>THE PLANETS</h1>
-            <MenuMobileIcon color="white"/>
-            <MenuPlanets/>
-        </header>
+        <>
+            <header className="main-header">
+                <h1>THE PLANETS</h1>
+                <MobileMenuIcon onClick={props.onShowMenu} color="white"/>
+                <MainMenuPlanets/>
+            </header>
+        </>
     )
 }
 

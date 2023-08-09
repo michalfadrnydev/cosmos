@@ -1,0 +1,8 @@
+@import "../../styles/main.scss";
+
+.mobile-menu-planets {
+    display: inline-flex;
+    @media (min-width: $md) {
+        display: none;
+    }
+}

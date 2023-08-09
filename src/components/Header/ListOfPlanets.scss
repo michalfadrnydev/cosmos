@@ -1,0 +1,74 @@
+@import "../../styles/main.scss";
+
+.list-of-planets {
+    margin: 0;
+    padding: 24px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-family: $ff-body;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: $f-spac-m;
+    .menu-item{
+        transition: 0.3s ease-in-out;
+        border-bottom: 1px solid rgba(255, 255, 255,  0.3);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        padding: 22px 0;
+        &:hover {
+            transition: 0.3s ease-in-out;
+            .menu-item__name {
+                transform: scale(1.1);
+            }
+        }
+        &:last-of-type {
+            border-bottom: none;
+        }
+        &__planet{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        &__name{
+            transition: 0.3s ease-in-out;
+            margin: 0;
+            color: white;
+        }
+    }
+    @media (min-width: $md) {
+        width: 100%;
+        flex-direction: row;
+        font-size: $fs-t-m;
+        justify-content: space-between;
+        padding: 0;
+        .menu-item {
+            padding: 0;
+            border-bottom: 4px solid transparent;
+            height: 46px;
+            &:last-of-type {
+                border-bottom: 4px solid transparent;
+            }
+            &__planet {
+                display: none
+            }
+        }
+    }
+    @media (min-width: $lg) {
+        justify-content: flex-end;
+        gap: 35px;
+        .menu-item {
+            display: flex;
+            align-items: center;
+            height: 85px;
+            border-top: 4px solid transparent;
+            border-bottom: none;
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+    }
+}

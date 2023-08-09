@@ -1,0 +1,10 @@
+@import "../../styles/main.scss";
+
+.mobile-menu-icon {
+    background-color: transparent;
+    border: none;
+    @media (min-width: $md) {
+        display: none;
+    }
+
+}

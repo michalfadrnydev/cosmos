@@ -9,6 +9,8 @@
     align-items: center;
     flex-grow: 1;
     flex-basis: 0;
+    box-shadow: 0 0 10px $shadow-col;
+    background-color: $backg-col;
     &__title {
         color: rgba(255, 255, 255,  0.5);
         font-family: $ff-body;

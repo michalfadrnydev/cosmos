@@ -1,16 +1,24 @@
+import React, {useState} from "react";
 import Header from "./components/Header/Header";
-import MenuMobileIcon from "./components/Header/MenuMobileIcon";
-import PlanetInfo from "./components/PlanetInfo/PlanetInfo";
+import MainContent from "./components/MainContent/MainContent";
+import MobileMenu from "./components/Header/MobileMenu";
 
 import "./styles/main.scss"
 
 function App() {
+  const[showMobileMenu, setShowMobileMenu] = useState(false);
+
+  const showMobileMenuHandler = () => {
+    setShowMobileMenu((prevIsShown) => {
+        return !prevIsShown;
+    });
+  } 
+
   return (
     <>
-      <Header/>
-      <main>
-        <PlanetInfo/>
-     </main>
+      <Header onShowMenu={showMobileMenuHandler}/>
+      <MainContent/>
+      {showMobileMenu && <MobileMenu/>}
     </>
   );
 }

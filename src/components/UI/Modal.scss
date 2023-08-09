@@ -1,0 +1,18 @@
+@import "../../styles/main.scss";
+
+.modal-backdrop {
+    position: fixed;
+    top: 77px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    z-index: 2;
+    position: absolute;
+    top: 77px;
+    width: 100%;
+    animation: slide-down 300ms ease-out forwards;
+}

@@ -24,6 +24,7 @@
     &:hover {
         background-color: darkblue;
         transition: 0.3s ease-in-out;
+        transform: scale(1.01);
     }
     @media (min-width: $lg) {
         gap: 24px;

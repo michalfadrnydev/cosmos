@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 
-import PlanetsContext from "../../data/planets-context";
+import PickedPlanetContext from "../../data/picked-planet-context";
 import ContentButton from "../UI/ContentButton";
 
 import myImage from "../../assets/planet-pict/full/1.png";
@@ -9,18 +9,18 @@ import sourceIcon from "../../assets/icons/external-link.png";
 import "./MainContent.scss";
 
 const PlanetInfo = () => {
-    const ctx = useContext(PlanetsContext);
+    const pickedPlanetCtx = useContext(PickedPlanetContext);
     return (
         <div className="planet">
             <div className="planet-image-container">
-                <img src={myImage} alt="planet"/>
+                <img src={pickedPlanetCtx.actual.fullPic} alt="planet"/>
             </div>
             <div className="planet-info">
                 <div className="planet-info__text">
-                    <h2>{ctx[0].name}</h2>
-                    <p>{ctx[0].overview}</p>
+                    {<h2>{pickedPlanetCtx.actual.name}</h2>}
+                    <p>{pickedPlanetCtx.actual.overview}</p>
                     <span>
-                        Source: <a href={ctx[0].source} target="_blank">Wikipedia</a>
+                        Source: <a href={pickedPlanetCtx.actual.source} target="_blank">Wikipedia</a>
                         <img src={sourceIcon}/>
                     </span>
                 </div>

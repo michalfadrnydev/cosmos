@@ -1,4 +1,6 @@
+import React, {useContext} from "react";
 import "./ContentButton.scss";
+
 
 const ContentButton = (props) => {
     return (

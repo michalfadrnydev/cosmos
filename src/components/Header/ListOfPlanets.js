@@ -29,7 +29,12 @@ const ListOfPlanets = () => {
                         borderColor: isHovered === planet.name ? planet.color : "transparent",
                     }}
                 >
-                    <div className="menu-item__planet"></div>
+                    <div 
+                        className="menu-item__planet"
+                        style = {{
+                            backgroundColor: planet.color,
+                        }}
+                    ></div>
                     <p className="menu-item__name">{planet.name}</p>
                 </li>
                 )

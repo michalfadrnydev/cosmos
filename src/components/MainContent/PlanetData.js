@@ -11,10 +11,21 @@ const PlanetData = () => {
 
     return (
         <div className="planet-data">
-            <DataCard title="ROTATION TIME" number={pickedPlanetCtx.actual.rottime}/>
-            <DataCard title="REVOLUTION TIME" number={pickedPlanetCtx.actual.revtime}/>
-            <DataCard title="RADIUS" number={pickedPlanetCtx.actual.radius}/>
-            <DataCard title="AVARAGE TEMP." number={pickedPlanetCtx.actual.avtemp}/>
+            <DataCard 
+                title="ROTATION TIME" 
+                number={pickedPlanetCtx.rotation}
+            />
+            <DataCard title="REVOLUTION TIME" 
+                number={pickedPlanetCtx.revolution}
+            />
+            <DataCard 
+                title="RADIUS" 
+                number={pickedPlanetCtx.radius}
+            />
+            <DataCard 
+                title="AVARAGE TEMP." 
+                number={pickedPlanetCtx.temperature}
+            />
         </div>
     )
 }

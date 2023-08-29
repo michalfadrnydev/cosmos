@@ -3,7 +3,7 @@ import PlanetsContext from "../../data/planets-context";
 import PickedPlanetContext from "../../data/picked-planet-context";
 import "./ListOfPlanets.scss"
 
-const ListOfPlanets = () => {
+const ListOfPlanets = (props) => {
     const ctx = useContext(PlanetsContext);
     const pickedPlanetCtx = useContext(PickedPlanetContext);
     const [isHovered, setIsHovered] = useState(null);
@@ -16,6 +16,12 @@ const ListOfPlanets = () => {
         setIsHovered(null);
     }
 
+    const setPlanetHandler = (planetName) => {
+        const hideMobileMenu = false;
+        pickedPlanetCtx.setPlanet(planetName);
+        props.onChangePlanet(hideMobileMenu);
+    }
+
     return (
         <ul className="list-of-planets">
             {ctx.map(planet => (
@@ -24,7 +30,7 @@ const ListOfPlanets = () => {
                     key={planet.name}
                     onMouseEnter={() => handleMouseEnter(planet.name)}
                     onMouseLeave={handleMouseLeave}
-                    onClick = {() => pickedPlanetCtx.setPlanet(planet.name)}
+                    onClick = {() => setPlanetHandler(planet.name)}
                     style = {{
                         borderColor: isHovered === planet.name ? planet.color : "transparent",
                     }}

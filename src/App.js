@@ -14,12 +14,16 @@ function App() {
       return !prevIsShown;
     });
   }
+
+  const hideMobileMenuHandler = (hiddenMobileMenu) => {
+    setShowMobileMenu(hiddenMobileMenu)
+  }
   
   return (
     <PickedPlanetProvider>
       <Header onShowMenu={showMobileMenuHandler}/>
       <MainContent/>
-      {showMobileMenu && <MobileMenu/>}
+      {showMobileMenu && <MobileMenu hideMobileMenu={hideMobileMenuHandler}/>}
     </PickedPlanetProvider>
   );
 }

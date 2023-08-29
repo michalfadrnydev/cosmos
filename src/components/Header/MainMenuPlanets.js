@@ -3,9 +3,12 @@ import ListOfPlanets from "./ListOfPlanets";
 import "./MainMenuPlanets.scss"
 
 const MainMenuPlanets = () => {
+    const noHideHandler = () => {
+    }
+
     return (
         <div className="main-menu-planets">
-            <ListOfPlanets/>
+            <ListOfPlanets onChangePlanet={noHideHandler}/>
         </div>
     )
 }

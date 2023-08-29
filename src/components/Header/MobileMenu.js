@@ -2,10 +2,14 @@ import Modal from "../UI/Modal";
 import ListOfPlanets from "./ListOfPlanets";
 import "./MobileMenu.scss"
 
-const MobileMenu = () => {
+const MobileMenu = (props) => {
+    const setVisibilityMobileMenu = (visibleMobileMenu) => {
+        props.hideMobileMenu(visibleMobileMenu);
+    }
+
     return (
         <Modal className="mobile-menu-planets">
-            <ListOfPlanets/>
+            <ListOfPlanets onChangePlanet={setVisibilityMobileMenu}/>
         </Modal>
     )
 }

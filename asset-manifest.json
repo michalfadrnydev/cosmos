@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cosmos/static/css/main.62206291.css",
-    "main.js": "/cosmos/static/js/main.dc3ac179.js",
+    "main.js": "/cosmos/static/js/main.46460f91.js",
     "static/media/3.png": "/cosmos/static/media/3.08cb3b27a1f6bf59ceb5.png",
     "static/media/4.png": "/cosmos/static/media/4.015bb2600b486bb64741.png",
     "static/media/1.png": "/cosmos/static/media/1.829862fb3db21dab2b62.png",
@@ -13,10 +13,10 @@
     "static/media/star_backg.png": "/cosmos/static/media/star_backg.e2ca7363a9c59029b862.png",
     "index.html": "/cosmos/index.html",
     "main.62206291.css.map": "/cosmos/static/css/main.62206291.css.map",
-    "main.dc3ac179.js.map": "/cosmos/static/js/main.dc3ac179.js.map"
+    "main.46460f91.js.map": "/cosmos/static/js/main.46460f91.js.map"
   },
   "entrypoints": [
     "static/css/main.62206291.css",
-    "static/js/main.dc3ac179.js"
+    "static/js/main.46460f91.js"
   ]
 }
